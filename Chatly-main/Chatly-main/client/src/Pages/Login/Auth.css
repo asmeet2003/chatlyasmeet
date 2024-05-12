@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+.auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(230, 219, 205);
+  font-family: "Poppins", sans-serif;
+}
+
+.auth h1 {
+  color: chocolate;
+}
+
+.auth__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: chocolate;
+  width: 45vh;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.auth__container .image__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  cursor: pointer;
+  border: 1px solid black;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.auth__container .image__container:hover {
+  background-color: lightgray;
+}
+
+.auth__container input {
+  padding: 13px;
+  margin: 15px;
+  border-radius: 5px;
+  border: 1px solid #a19d9d;
+  width: 85%;
+}
+
+.auth__container button {
+  display: block;
+  margin: 15px;
+  padding: 15px;
+  width: 93%;
+  background-color: rgb(72, 67, 67);
+  color: #fff;
+  font-size: 15px;
+  border: none;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth__container button:hover {
+  background-color: black;
+  color: chocolate;
+}
+
+.image__container .addimage {
+  color: black;
+  height: 30px;
+  width: 30px;
+}
+
+.image__container .addimage:hover {
+  color: black;
+}
+
+.selectedImage {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.auth p {
+  margin-top: 15px;
+  font-size: 15px;
+  color: rgb(125, 122, 122);
+}
+
+.auth p span {
+  font-weight: 700;
+  cursor: pointer;
+  color: chocolate;
+}
+
+.auth p span:hover {
+  font-weight: 700;
+  color: white;
+}

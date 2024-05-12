@@ -1,0 +1,46 @@
+.friends {
+  display: flex;
+  padding: 20px;
+  /* cursor: pointer; */
+  border-bottom: 1px solid black;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease; /* Add transition for a smoother effect */
+}
+
+.friends:hover,
+.friends.selected {
+  background-color: rgb(243, 105, 6);
+}
+
+.info {
+  display: flex;
+  cursor: pointer;
+}
+
+.friends img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid black;
+}
+
+.friends__info {
+  margin-left: 15px;
+}
+
+.friends__info h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.delete {
+  color: red;
+  cursor: pointer;
+}
+
+.delete:hover {
+  color: rgb(227, 122, 122);
+}

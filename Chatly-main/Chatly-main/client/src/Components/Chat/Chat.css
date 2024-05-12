@@ -1,0 +1,123 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  flex: 0.65;
+  background-color: rgb(243, 105, 6);
+  height: auto;
+}
+
+.chat .chat__header {
+  display: flex;
+  top: 0;
+  height: 9vh;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  align-items: center;
+}
+
+.chat .chat__header img {
+  height: 7vh;
+  width: 4vw;
+  margin-left: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid black;
+}
+
+.user__info {
+  margin-left: 15px;
+}
+
+.user__info h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.user__info p {
+  color: greenyellow;
+}
+
+.chat__body {
+  flex: 1;
+  background-repeat: repeat;
+  background-position: center;
+  padding: 30px;
+  overflow-y: scroll;
+}
+
+.chat__receiver {
+  position: relative;
+  font-size: 16px;
+  padding: 10px;
+  width: fit-content;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.chat__message {
+  margin-left: auto;
+  background-color: #dcf8c6;
+  margin-bottom: 30px;
+  position: relative;
+  font-size: 16px;
+  padding: 10px;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+.chat__footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+  background-color: rgb(161, 92, 40);
+  border-left: 1px solid black;
+}
+
+.chat__footer input {
+  flex: 1;
+  outline-width: 0;
+  border-radius: 30px;
+  padding: 10px;
+  border: none;
+  margin: 20px;
+}
+
+.chat__footer button {
+  background-color: rgb(202, 145, 105);
+  border: none;
+  margin: 10px;
+  margin-left: -5px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.chat__footer button:hover {
+  color: #fff;
+}
+
+.chat__footer button span {
+  font-family: sans-serif;
+  font-size: medium;
+  margin-right: 5px;
+  font-weight: 600;
+}
+
+.chat .chat__body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat .chat__body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.chat .chat__body::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
+}

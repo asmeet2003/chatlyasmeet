@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 0.35;
+  background-color: rgb(202, 145, 105);
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+}
+
+.sidebar .title {
+  margin-left: 10px;
+  color: rgb(201, 244, 12);
+}
+
+.sidebar .add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.add .addicon {
+  height: 50px;
+  width: 50px;
+  color: black;
+  cursor: pointer;
+}
+
+.add .addicon:hover {
+  color: rgb(243, 105, 6);
+}
+
+.sidebar .friends__list {
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .friends__list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar .friends__list::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sidebar .friends__list::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(161, 92, 40);
+}
+
+.sidebar .footer .profile__details {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .footer img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  border: 1px solid black;
+}
+
+.sidebar .footer .user {
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar .footer .user:hover {
+  color: black;
+}
+.sidebar .footer .log__out {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  background-color: black;
+  padding: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.sidebar .footer .log__out:hover {
+  background-color: white;
+}
+.sidebar .footer .log__out .power {
+  height: 20px;
+  width: 20px;
+  color: red;
+  margin-right: 5px;
+}
+
+.sidebar .footer h4 {
+  margin: 0;
+  color: red;
+}

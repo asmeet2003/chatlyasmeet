@@ -1,0 +1,65 @@
+.addFriendList {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup {
+  background-color: rgb(202, 145, 105);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.addFriendList {
+  backdrop-filter: blur(5px);
+}
+
+.popup .add__friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.add__friend .user__info {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.popup .add__friend img {
+  height: 60px;
+  width: 60px;
+  margin-right: 5px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid black;
+  margin-left: -20px;
+}
+
+.add__friend .add {
+  cursor: pointer;
+}
+
+.add__friend .add:hover {
+  color: chocolate;
+}
+
+.popup .head {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+
+.popup .head .close:hover {
+  color: black;
+  cursor: pointer;
+}
